@@ -1,9 +1,13 @@
 #增加插件
-CONFIG_PACKAGE_luci-app-diskman=y
-CONFIG_PACKAGE_luci-app-ssr-plus=y
-CONFIG_PACKAGE_luci-app-openclash=y
 CONFIG_PACKAGE_luci-app-autoreboot=y
-CONFIG_PACKAGE_luci-app-uugamebooster=y
+#删除USB打印机插件
+CONFIG_PACKAGE_luci-app-usb-printer=n
+#删除硬盘插件(AX6000不支持USB)
+CONFIG_PACKAGE_luci-app-diskman=n
+#删除FW插件
+CONFIG_PACKAGE_luci-app-ssr-plus=n
+CONFIG_PACKAGE_luci-app-openclash=n
+CONFIG_PACKAGE_luci-app-uugamebooster=n
 #删除插件
 CONFIG_PACKAGE_luci-app-wol=n
 CONFIG_PACKAGE_luci-app-ddns=n
